@@ -2,7 +2,6 @@
  * some elements among the first n elements of the array.
  * 
  * 
- * 
  * time: O(N*sum);	memory: O(N*sum)
  */
 
@@ -10,12 +9,8 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
  // } Driver Code Ends
-// User function Template for C++
 
-
-// bool dp[100002][102];
 
 class Solution{
 public:
@@ -48,8 +43,8 @@ public:
     }
 };
 
-// { Driver Code Starts.
 
+// { Driver Code Starts.
 int main(){
     int t;
     cin>>t;
