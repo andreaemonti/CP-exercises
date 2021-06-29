@@ -1,7 +1,14 @@
-// CODE GIVEN BY THE PLATFORM:
+/* We implement a recursive function to calculate the max sum among the paths 
+ * from each node to every leaf under it. 
+ * Meanwile, we update global variable whenever we examine a node with two 
+ * children: we consider the maxSumPath candidate given by the node and the 
+ * recursive maxPathSumDown of its two children.
+ * 
+ * time: O(N);	memory: O(tree height) <= O(N)
+ */
 
+// } Driver Code:
 #include <bits/stdc++.h>
-
 using namespace std;
 
 // Tree Node
@@ -91,28 +98,6 @@ int main() {
 }// } Driver Code Ends
 
 
-/*
-struct Node {
-    int data;
-    struct Node* left;
-    struct Node* right;
-    
-    Node(int x){
-        data = x;
-        left = right = NULL;
-    }
-};
-*/
-
-// MY SOLUTION HERE
-/* We implement a recursive function to calculate the max sum among the paths 
- * from each node to every leaf under it. 
- * Meanwile, we update global variable whenever we examine a node with two 
- * children: we consider the maxSumPath candidate given by the node and the 
- * recursive maxPathSumDown of its two children.
- * 
- * time: O(N);	memory: O(tree height) <= O(N)
- */
 
 int ans;
 int maxPathSumDown(Node* n){
