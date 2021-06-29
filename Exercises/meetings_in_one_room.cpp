@@ -1,9 +1,9 @@
-/* A greedy approach works. We just have to order meetings by end time and then 
+/* A greedy approach works. We just have to sort meetings by end time and then 
  * by reading the sorted array, pick one only the meetings that fit with the previously 
  * picked.
  * 
  * 
- * time: O();	memory: O()
+ * time: O(N*log(N));	memory: O(N)
  */
 
 
